@@ -1,7 +1,7 @@
 # 🧠 NLP Grammar & Spell Checker
 
 <p align="center">
-  <img src="./assets/nlp_checker.png" alt="Project Banner" width="80%"/>
+  <img src="./assets/Project_NLP.png" alt="Project Banner" width="80%"/>
 </p>
 
 <p align="center">
