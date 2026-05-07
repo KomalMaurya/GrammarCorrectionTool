@@ -40,19 +40,23 @@
 
 ---
 
-## ⚙️ Installation & Setup
-### 1️⃣ Clone Repository
-
-```bash
+⚙️ Installation & Setup
+1️⃣ Clone Repository
 git clone https://github.com/KomalMaurya/GrammarCorrectionTool
 cd GrammarCorrectionTool
+2️⃣ Create Virtual Environment (IMPORTANT)
 
-### 2️⃣ Create Virtual Environment
+Recommended to isolate dependencies
+
 Windows
-```md
 python -m venv venv
 venv\Scripts\activate
-
 Mac / Linux
 python3 -m venv venv
 source venv/bin/activate
+3️⃣ Install Dependencies
+pip install flask language-tool-python
+4️⃣ Run Application
+python app.py
+5️⃣ Open in Browser
+http://127.0.0.1:5000/
