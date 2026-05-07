@@ -24,7 +24,35 @@
   <img src="https://screenapp.io/app/v/1NdF-7pEoq" alt="Demo Video" width="80%"/>
 </p> -->
 
-OR add a video link:
-
 ```md
-▶️ Watch Demo: [Video Link](https://screenapp.io/app/v/1NdF-7pEoq)
+▶️ Watch Demo: https://screenapp.io/app/v/1NdF-7pEoq
+
+---
+
+## ✨ Features
+
+- 📝 Grammar error detection  
+- 🔤 Spell checking with smart suggestions  
+- 🌐 Clean and responsive web interface  
+- ⚡ Fast NLP processing using LanguageTool  
+- 🔧 Easy to customize and extend  
+
+
+---
+
+## ⚙️ Installation & Setup
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/KomalMaurya/GrammarCorrectionTool
+cd GrammarCorrectionTool
+
+### 2️⃣ Create Virtual Environment
+Windows
+```md
+python -m venv venv
+venv\Scripts\activate
+
+Mac / Linux
+python3 -m venv venv
+source venv/bin/activate
