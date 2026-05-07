@@ -1,4 +1,3 @@
-```markdown
 # 🧠 NLP Grammar & Spell Checker
 
 <p align="center">
@@ -44,7 +43,6 @@ Follow these steps to run the project locally:
 ```bash
 git clone [https://github.com/KomalMaurya/GrammarCorrectionTool](https://github.com/KomalMaurya/GrammarCorrectionTool)
 cd GrammarCorrectionTool
-```
 
 ### 2️⃣ Create Virtual Environment (IMPORTANT)
 Recommended to isolate dependencies and avoid conflicts.
