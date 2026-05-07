@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grammar & Spell Checker</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+            color:white;
+        }
+
+        .container{
+            width:100%;
+            max-width:900px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:35px;
+            box-shadow:0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        .title{
+            text-align:center;
+            margin-bottom:10px;
+            font-size:2.5rem;
+            font-weight:bold;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#cbd5e1;
+            margin-bottom:30px;
+        }
+
+        textarea{
+            width:100%;
+            min-height:220px;
+            resize:none;
+            border:none;
+            outline:none;
+            border-radius:15px;
+            padding:20px;
+            font-size:1rem;
+            background:#f8fafc;
+            color:#111827;
+            margin-bottom:20px;
+            line-height:1.6;
+        }
+
+        .btn{
+            width:100%;
+            padding:15px;
+            border:none;
+            border-radius:12px;
+            background:#22c55e;
+            color:white;
+            font-size:1rem;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#16a34a;
+            transform:translateY(-2px);
+        }
+
+        .result-box{
+            margin-top:30px;
+            background:#0f172a;
+            padding:25px;
+            border-radius:15px;
+            border:1px solid rgba(255,255,255,0.08);
+        }
+
+        .result-title{
+            margin-bottom:15px;
+            color:#22c55e;
+            font-size:1.3rem;
+            font-weight:bold;
+        }
+
+        .result-text{
+            line-height:1.8;
+            color:#e2e8f0;
+            white-space:pre-wrap;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:25px;
+            color:#94a3b8;
+            font-size:0.9rem;
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                padding:20px;
+            }
+
+            .title{
+                font-size:2rem;
+            }
+
+            textarea{
+                min-height:180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">NLP Grammar Checker</h1>
+
+        <p class="subtitle">
+            Fix grammar mistakes and spelling errors instantly
+        </p>
+
+        <form action="/spell" method="POST">
+
+            <textarea 
+                name="text" 
+                placeholder="Type or paste your text here..."
+                required
+            >{{ original_text }}</textarea>
+
+            <button class="btn" type="submit">
+                Check Grammar
+            </button>
+
+        </form>
+
+        {% if corrected_text %}
+
+        <div class="result-box">
+
+            <div class="result-title">
+                Corrected Text
+            </div>
+
+            <div class="result-text">
+                {{ corrected_text }}
+            </div>
+
+        </div>
+
+        {% endif %}
+
+        <div class="footer">
+            Built with Flask + NLP
+        </div>
+    </div>
+
+</body>
+</html>
