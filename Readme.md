@@ -41,7 +41,7 @@ Follow these steps to run the project locally:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/KomalMaurya/GrammarCorrectionTool](https://github.com/KomalMaurya/GrammarCorrectionTool)
+git clone https://github.com/KomalMaurya/GrammarCorrectionTool.git
 cd GrammarCorrectionTool
 ```
 
@@ -88,6 +88,7 @@ Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 <p align="center">
   <img src="./assets/Architecture.png" alt="Project Banner" width="80%"/>
 </p>
+
 ---
 
 ## 📁 Project Structure
