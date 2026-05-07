@@ -20,13 +20,11 @@
 
 ## 🚀 Live Demo
 
-> Replace the GIF below with your actual screen recording (recommended)
-
-<p align="center">
+<!-- <p align="center">
   <img src="https://screenapp.io/app/v/1NdF-7pEoq" alt="Demo Video" width="80%"/>
-</p>
+</p> -->
 
 OR add a video link:
 
 ```md
-▶️ Watch Demo: https://your-demo-link.com
+▶️ Watch Demo: [Video Link](https://screenapp.io/app/v/1NdF-7pEoq)
