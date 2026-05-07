@@ -23,7 +23,7 @@
 > Replace the GIF below with your actual screen recording (recommended)
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="Demo Video" width="80%"/>
+  <img src="https://screenapp.io/app/v/1NdF-7pEoq" alt="Demo Video" width="80%"/>
 </p>
 
 OR add a video link:
